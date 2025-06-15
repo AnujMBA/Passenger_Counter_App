@@ -4,22 +4,13 @@ let count = 0;
 
 function increment(){
     count++;
-    countEl.innerText = count;    
+    countEl.textContent = count;    
 }
 
 function save(){
     let countStr = count+ " - "
-    saveEl.innerText += countStr; // Using textContent to avoid HTML parsing
-   // console.log("Saved: " + count);
+    saveEl.textContent += countStr; 
+    countEl.textContent = 0; // Reset count display
+    count = 0; // Reset count variable
     
 }
-////////////////////////////////////////////////////////////////////////
-
-// let welcomeEL= document.getElementById("welcome-el");
-
-// let name = 'Anuj Kumar';
-// let greeting = 'Welcome back ';
-
-// welcomeEL.innerText = greeting + name;
-
-// welcomeEL.innerText += "👋";
