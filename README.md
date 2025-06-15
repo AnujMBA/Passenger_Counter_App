@@ -1,1 +1,1 @@
-Basic JavaScript
+A Amazing Counter App
